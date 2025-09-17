@@ -20,12 +20,14 @@ kanban-board
 ├── README.md         # Documentation for the project
 └── src               # Source files for the application
     ├── main.js       # Application entry point
-    ├── utils.js      # Utility functions
-    ├── storage.js    # LocalStorage management
-    ├── dnd.js        # Drag-and-drop functionality
-    ├── render.js     # UI rendering and updates
-    ├── tasks.js      # Task management logic
-    └── events.js     # Event handling for user interactions
+    ├── utils/
+        ├── utils.js      # Utility functions
+    ├── modules/
+        ├── storage.js    # LocalStorage management
+        ├── dnd.js        # Drag-and-drop functionality
+        ├── render.js     # UI rendering and updates
+        ├── tasks.js      # Task management logic
+        └── events.js     # Event handling for user interactions
 ```
 
 ## 🚀 Quick Start
