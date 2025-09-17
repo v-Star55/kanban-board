@@ -21,8 +21,8 @@ kanban-board
 └── src               # Source files for the application
     ├── main.js       # Application entry point
     ├── utils/
-        ├── utils.js      # Utility functions
-    ├── modules/
+    │   └── utils.js      # Utility functions
+    └── modules/
         ├── storage.js    # LocalStorage management
         ├── dnd.js        # Drag-and-drop functionality
         ├── render.js     # UI rendering and updates
