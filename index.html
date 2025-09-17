@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic Kanban Board</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Dynamic Kanban Board</h1>
+  </header>
+
+  <main class="container">
+    <section class="task-form" aria-labelledby="task-form-title">
+      <h2 id="task-form-title">Create Task</h2>
+      <form id="new-task-form">
+        <div class="field-group">
+          <label for="task-title">Title</label>
+          <input id="task-title" name="title" type="text" placeholder="e.g., Write docs" required />
+        </div>
+        <div class="field-group">
+          <label for="task-desc">Description</label>
+          <textarea id="task-desc" name="description" placeholder="Short description"></textarea>
+        </div>
+        <button type="submit" class="btn primary">Add</button>
+      </form>
+    </section>
+
+    <section class="board" aria-label="Kanban Board">
+      <div class="column" data-column="todo">
+        <h3>To Do</h3>
+        <div class="column-dropzone" data-dropzone="todo"></div>
+      </div>
+      <div class="column" data-column="in-progress">
+        <h3>In Progress</h3>
+        <div class="column-dropzone" data-dropzone="in-progress"></div>
+      </div>
+      <div class="column" data-column="done">
+        <h3>Done</h3>
+        <div class="column-dropzone" data-dropzone="done"></div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
+
+
