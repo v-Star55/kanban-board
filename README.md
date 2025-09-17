@@ -17,8 +17,6 @@ A modern, responsive Kanban board application with drag & drop functionality and
 kanban-board
 ├── index.html        # Main HTML structure of the application
 ├── styles.css        # Stylesheet for the application
-├── package.json      # npm configuration file
-├── .gitignore        # Files and directories to ignore in version control
 ├── README.md         # Documentation for the project
 └── src               # Source files for the application
     ├── main.js       # Application entry point
